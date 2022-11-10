@@ -37,8 +37,8 @@
 }
 
 .no1:hover {
-    background: rgb(202, 183, 186);
-    color: rgb(202, 183, 186);
+    background: pink;
+    color:pink;
     border: 0;
 }
 #tt2,#tt1,#tt,#yes:hover{
