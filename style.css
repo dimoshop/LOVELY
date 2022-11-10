@@ -1,0 +1,76 @@
+.heard{
+    visibility: hidden;
+}
+.lbl4 d,.lbl3 d,.lbl2 d,.lbl1 d{
+    font-size: 30px;
+    color: white;
+    font-family: monospace;
+}
+.lbl4,.lbl3,.lbl1,.lbl2{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.lbl4>div,.lbl3 > div,.lbl2 > div,.lbl1 > div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.lbl4 >div div,.lbl3 > div div,.lbl2 > div div,.lbl1 > div div{
+    padding: 0 20px;
+}
+.lbl4 > div div button,.lbl3 > div div button,.lbl2 > div div button,
+.lbl1 > div div button{
+    font-size: xx-large;
+    font-family: monospace;
+}
+#tt2,#tt1,#tt,#yes{
+    background-color: hotpink;
+}
+.no1{
+    background-color: red;
+}
+
+.no1:hover {
+    background: rgb(202, 183, 186);
+    color: rgb(202, 183, 186);
+    border: 0;
+}
+#tt2,#tt1,#tt,#yes:hover{
+    cursor: pointer;
+}
+.lbl2,.lbl3,.lbl4,.td{
+    display: none;
+}
+.lbl1.hide{
+    display: none;
+}
+.lbl2.hide{
+    display: none;
+}
+.lbl3.hide{
+    display: none;
+}
+.lbl4.hide{
+    display: none;
+}
+.lbl2.open{
+    display: flex;
+}
+.lbl3.open{
+    display: flex;
+}
+.lbl4.open{
+    display: flex;
+}
+.heard.open{
+    visibility: visible;
+}
+.body.open{
+    background-image: url(./z3871221810051_ee592916f879da5512db6fd0364692aa.jpg);
+}
