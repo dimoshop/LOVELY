@@ -1,12 +1,12 @@
 .heard{
     visibility: hidden;
 }
-.lbl4 d,.lbl3 d,.lbl2 d,.lbl1 d{
+.lbl7 d,.lbl6 d,.lbl5 d,.lbl4 d,.lbl3 d,.lbl2 d,.lbl1 d{
     font-size: 30px;
     color: white;
     font-family: monospace;
 }
-.lbl4,.lbl3,.lbl1,.lbl2{
+.lbl7,.lbl6,.lbl5,.lbl4,.lbl3,.lbl1,.lbl2{
     display: flex;
     flex-flow: column;
     height: 100%;
@@ -14,22 +14,22 @@
     align-items: center;
     justify-content: center;
 }
-.lbl4>div,.lbl3 > div,.lbl2 > div,.lbl1 > div{
+.lbl7>div,.lbl6>div,.lbl5>div,.lbl4>div,.lbl3 > div,.lbl2 > div,.lbl1 > div{
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 10px 20px;
 }
 
-.lbl4 >div div,.lbl3 > div div,.lbl2 > div div,.lbl1 > div div{
+.lbl7>div div,.lbl6>div div,.lbl5>div div,.lbl4 >div div,.lbl3 > div div,.lbl2 > div div,.lbl1 > div div{
     padding: 0 20px;
 }
-.lbl4 > div div button,.lbl3 > div div button,.lbl2 > div div button,
+.lbl7>div div button,.lbl6>div div button,.lbl5>div div button,.lbl4 > div div button,.lbl3 > div div button,.lbl2 > div div button,
 .lbl1 > div div button{
     font-size: xx-large;
     font-family: monospace;
 }
-#tt2,#tt1,#tt,#yes{
+#tt4,#tt5,#tt3,#tt2,#tt1,#tt,#yes{
     background-color: hotpink;
 }
 .no1{
@@ -41,10 +41,10 @@
     color:pink;
     border: 0;
 }
-#tt2,#tt1,#tt,#yes:hover{
+#tt4,#tt5,#tt3,#tt2,#tt1,#tt,#yes:hover{
     cursor: pointer;
 }
-.lbl2,.lbl3,.lbl4,.td{
+.lbl7,.lbl6,.lbl2,.lbl3,.lbl4,.td{
     display: none;
 }
 .lbl1.hide{
@@ -59,6 +59,15 @@
 .lbl4.hide{
     display: none;
 }
+.lbl5.hide{
+    display: none;
+}
+.lbl6.hide{
+    display: none;
+}
+.lbl7.hide{
+    display: none;
+}
 .lbl2.open{
     display: flex;
 }
@@ -68,9 +77,30 @@
 .lbl4.open{
     display: flex;
 }
+.lbl5.open{
+    display: flex;
+}
+.lbl6.open{
+    display: flex;
+}
+.lbl7.open{
+    display: flex;
+}
 .heard.open{
     visibility: visible;
+}.body{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    font-size:50px;
+    color:red;
+    font-family: monospace;
 }
+
 .body.open{
-    background-image: url(./z3871221810051_ee592916f879da5512db6fd0364692aa.jpg);
+    visibility: visible;
 }

@@ -48,18 +48,21 @@
     </style>
 </HEAD>
 
-<BODY class="body">
-
+<BODY >
+    <p class="body">Tr.Thanh</p>
     <canvas id="pinkboard" class="heard">
         <canvas id="pinkboard">
         </canvas>
     </canvas>
     <div class="lbl1">
         <d>
-            Huệ có muốn bao trà sữa Hà không :))
+            Hello Tr.Thanh yeu dau cua to
+        </d>
+        <d>
+            Bấm tiếp tục để trả lời câu hỏi nhé Tr.Thanh
         </d>
         <div>
-            <div><button id="yes" onclick="an()">Có</button></div>
+            <div><button id="yes" onclick="an()">Tiếp Tục</button></div>
            <div>
                 <button class="no1"> Không
                 </button>
@@ -68,10 +71,10 @@
     </div>
     <div class="lbl2">
         <d>
-            Hứa rồi đấy nhớ :)). Bấm tiếp tục đi nào.
+            Tr.Thanh có phải người yêu của Th.Huệ không nhờ?
         </d>
         <div>
-        <div><button id="tt" onclick="an1()">Tiếp tục</button></div>
+        <div><button id="tt" onclick="an1()">Có</button></div>
            <div>
                 <button class="no1"> Không
                 </button>
@@ -80,10 +83,10 @@
     </div>
     <div class="lbl3">
         <d>
-            Tưởng trái tim chứ gì :)) Hong có đâu đừng bấm tiếp tục nữa.Thoát đi
+            Tr.Thanh có thương tớ không ạ?
         </d>
         <div>
-        <div><button id="tt1" onclick="an2()">Tiếp tục</button></div>
+        <div><button id="tt1" onclick="an2()">Có</button></div>
            <div>
                 <button class="no1"> Không
                 </button>
@@ -92,7 +95,7 @@
     </div>
     <div class="lbl4">
         <d>
-            Ô hay vẫn bấm à. Thế bấm lần cuối xem nào :))
+            Tr.Thanh có biết tớ thích gì nhất không ạ?
         </d>
         <div>
         <div><button id="tt2" onclick="an3()">Tiếp tục</button></div>
@@ -101,6 +104,40 @@
                 </button>
             </div>
         </div>
+    </div>
+    <div class="lbl5">
+        <d>
+            Tớ thích gì nào ?
+        </d>
+        <div>
+            <input type="text">
+            <div><button id="tt3" onclick="an4()">Gửi</button></div>
+        </div>
+    </div>
+    <div class="lbl6">
+        <d>
+            Lý do sao Tr.Thanh thương tớ vậy?
+        </d>
+        <div>
+            <input type="text">
+            <div><button id="tt4" onclick="an5()">Gửi</button></div>
+        </div>
+    </div>
+    <div class="lbl7">
+        <d>
+            Tớ thương Tr.Thanh lắm đó...
+        </d>
+        <d>
+            Mãi bên nhau bạn nhé!!!
+        </d>
+        <div>
+            <div><button id="tt5" onclick="an6()">Có</button></div>
+           <div>
+                <button class="no1"> Không
+                </button>
+            </div>
+        </div>
+    </div>
     </div>
     <script>
         /*
@@ -384,6 +421,25 @@
         function an3(){
             lbl04.classList.remove('open')
             lbl04.classList.add('hide')
+            lbl05.classList.add('open')
+            
+        }
+        var lbl05=document.querySelector('.lbl5')
+        function an4(){
+            lbl05.classList.remove('open')
+            lbl05.classList.add('hide')
+            lbl06.classList.add('open')
+        }
+        var lbl06=document.querySelector('.lbl6')
+        var lbl07=document.querySelector('.lbl7')
+        function an5(){
+            lbl06.classList.remove('open')
+            lbl06.classList.add('hide')
+            lbl07.classList.add('open')
+        }
+        function an6(){
+            lbl07.classList.remove('open')
+            lbl07.classList.add('hide')
             tim.classList.add('open')
             bd.classList.add('open')
         }
